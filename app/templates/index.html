@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}爬取拉勾网技术类职位信息{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+  <div>
+{#      <embed type="image/svg+xml" src="{{ key_tag | safe }}" style="max-width: 1000px"></embed>#}
+{#      <embed type="image/svg+xml" src="{{ education | safe }}" style="max-width: 1000px"></embed>#}
+{#      <embed type="image/svg+xml" src="{{ city_phase | safe }}" style="max-width: 1000px"></embed>#}
+{#      <embed type="image/svg+xml" src="{{ company_count | safe }}" style="max-width: 1000px"></embed>#}
+{#      <embed type="image/svg+xml" src="{{ kd_count | safe }}" style="max-width: 1000px"></embed>#}
+{#      <embed type="image/svg+xml" src="{{ salary_count | safe }}" style="max-width: 1000px"></embed>#}
+{#      <embed type="image/svg+xml" src="{{ city_experience | safe }}" style="max-width: 1000px"></embed>#}
+{#      <embed type="image/svg+xml" src="{{ city_count | safe }}" style="max-width: 1000px"></embed>#}
+{#<embed type="image/svg+xml" src="{{ industry_count | safe }}" style="max-width: 1000px"></embed>#}
+{#<embed type="image/svg+xml" src="{{ python_guangzhou | safe }}" style="max-width: 1000px"></embed>#}
+
+      <embed type="image/svg+xml" src="{{ url_for('static',filename='city.svg') }}" style="max-width: 1000px"></embed>
+      <embed type="image/svg+xml" src="{{ url_for('static',filename='city_edu.svg') }}" style="max-width: 1000px"></embed>
+      <embed type="image/svg+xml" src="{{ url_for('static',filename='city_experience.svg') }}" style="max-width: 1000px"></embed>
+      <embed type="image/svg+xml" src="{{ url_for('static',filename='company.svg') }}" style="max-width: 1000px"></embed>
+      <embed type="image/svg+xml" src="{{ url_for('static',filename='des.svg') }}" style="max-width: 1000px"></embed>
+      <embed type="image/svg+xml" src="{{ url_for('static',filename='industry.svg') }}" style="max-width: 1000px"></embed>
+      <embed type="image/svg+xml" src="{{ url_for('static',filename='kd.svg') }}" style="max-width: 1000px"></embed>
+      <embed type="image/svg+xml" src="{{ url_for('static',filename='phase.svg') }}" style="max-width: 1000px"></embed>
+      <embed type="image/svg+xml" src="{{ url_for('static',filename='salary.svg') }}" style="max-width: 1000px"></embed>
+      <embed type="image/svg+xml" src="{{ url_for('static',filename='tag.svg') }}" style="max-width: 1000px"></embed>
+      <embed type="image/svg+xml" src="{{ url_for('static',filename='guangzhou_salary.svg') }}" style="max-width: 1000px"></embed>
+
+  </div>
+
+</div>
+
+{% endblock %}
