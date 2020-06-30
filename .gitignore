@@ -1,0 +1,19 @@
+# Byte-compiled / optimized / DLL files
+*.pyc
+__pycache__
+*/__pycache__
+*/*/__pycache__
+*/*/*/__pycache__
+*/*/*/*/__pycache__
+
+db.sqlite3
+*.py[cod]
+
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/
+
+lagou_data/*
+
+
+

@@ -1,0 +1,36 @@
+##################基础配置######################################################
+
+# MongoDB 配置, 若爬虫配置save_method为database, 需要设置MongoDB
+mongo_db:
+  host:  # 服务器
+  port:   27017  # 端口
+  user:     # 用户
+  password:   # 密码
+  min_pool_size:  10  # 最小连接数
+  max_pool_size:  1000  # 最大连接数
+  wait_queue_timeout_ms:  5000  # 连接池需要等待
+  socket_timeout_ms:  20000  # 数据库操作等待超时时间
+
+# selenium 配置, 仅为谷歌浏览器配置
+webdriver_option:
+  headless: true  # headless 是否在后台运行
+  proxy_server:   # proxy_server 代理服务器
+  executable_path :  /home/alan/env/chromedriver  # 谷歌浏览器驱动所在路径
+
+
+###################爬虫配置######################################################
+
+# 爬虫配置
+lagou:
+  keyword:  java # 搜索关键字, 为空则代表按照左侧导航栏分类进行全网爬取
+  username:  # 拉勾登录账号
+  password:   # 拉勾登录密码
+  sleep_interval: 1 # 关键动作时间的时间间隔, 时间尽量不要太快, 避免触发反爬虫机制
+  save_method: file  # 保存方法, 分别为file, mysql, mongodb
+  save_file_path: lagou_data  # 若保存为 file, 指定具体文件保存路径
+
+
+# 可视化配置
+visualize:
+  keyword:  java # 关键字, 指定数据分类， 为空则代表按照统计所有数据
+  save_method: file  # 获取数据的方法, 分别为file, mysql, mongodb

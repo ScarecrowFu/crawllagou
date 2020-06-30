@@ -1,0 +1,86 @@
+﻿<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>index</title>
+  <link rel="stylesheet" href="css/comon0.css">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/echarts.min.js"></script>
+  <script type="text/javascript" src="js/china.js"></script>
+  <script type="text/javascript" src="js/area_echarts.js"></script>
+  <script type="text/javascript" src="js/echarts-wordcloud.min.js"></script>
+  <script type="text/javascript" src="js/report_charts.js"></script>
+
+</head>
+<div class="canvas" style="opacity: .2">
+  <iframe src="js/snow.html" style="width: 100%; height: 100%"></iframe>
+</div>
+<body>
+<div class="loading">
+  <div class="loadbox"> <img src="picture/loading.gif">{{ welcome }} </div>
+</div>
+<div class="head">
+  <h1>{{ title }}</h1>
+  <div class="weather"><span id="showTime"></span></div>
+</div>
+<div class="mainbox">
+  <ul class="clearfix">
+    <li>
+      <!-- 左侧 -->
+      {% for left_chart in left_charts %}
+      <div class="boxall" style="height: 3.2rem">
+        <div class="alltitle">{{ left_chart.title }}</div>
+        <div class="allnav" id="{{ left_chart.name }}"></div>
+        <div class="boxfoot"></div>
+      </div>
+      {% endfor %}
+    </li>
+    <!-- 中间 -->
+    <li>
+      <div class="bar">
+        <div class="barbox">
+          <ul class="clearfix">
+            <li class="pulll_left counter">{{ total }}</li>
+            <li class="pulll_left counter">{{ city_max_jobs }}</li>
+          </ul>
+        </div>
+        <div class="barbox2">
+          <ul class="clearfix">
+            <li class="pulll_left">总数据量</li>
+            <li class="pulll_left">最多岗位(城市)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="map">
+        <div class="map1"><img src="picture/lbx.png"></div>
+        <div class="map2"><img src="picture/jt.png"></div>
+        <div class="map3"><img src="picture/map.png"></div>
+        <div class="map4" id="address_map_chart"></div>
+      </div>
+
+      {% for middle_chart in middle_charts %}
+      <div class="boxall" style="height: 5.4rem">
+        <div class="alltitle">{{ middle_chart.title }}</div>
+        <div class="allnav" id="{{ middle_chart.name }}"></div>
+        <div class="boxfoot"></div>
+      </div>
+      {% endfor %}
+
+    </li>
+    <!-- 右侧 -->
+    <li>
+      {% for right_chart in right_charts %}
+      <div class="boxall" style="height: 3.2rem">
+        <div class="alltitle">{{ right_chart.title }}</div>
+        <div class="allnav" id="{{ right_chart.name }}"></div>
+        <div class="boxfoot"></div>
+      </div>
+      {% endfor %}
+    </li>
+  </ul>
+
+</div>
+<div class="back"></div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="../js/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="b3505c92bb9543b8be3c7b433e991d76" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_b3505c92bb9543b8be3c7b433e991d76 = echarts.init(
+            document.getElementById('b3505c92bb9543b8be3c7b433e991d76'), 'white', {renderer: 'canvas'});
+        var option_b3505c92bb9543b8be3c7b433e991d76 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "green",
+        "yellow",
+        "red",
+        "pink",
+        "orange",
+        "purple"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u5b66\u5386",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u672c\u79d1\u53ca\u4ee5\u4e0a",
+                    "value": "9835"
+                },
+                {
+                    "name": "\u5927\u4e13\u53ca\u4ee5\u4e0a",
+                    "value": "1422"
+                },
+                {
+                    "name": "\u5b66\u5386\u4e0d\u9650",
+                    "value": "690"
+                },
+                {
+                    "name": "\u7855\u58eb\u53ca\u4ee5\u4e0a",
+                    "value": "127"
+                }
+            ],
+            "radius": [
+                "0%",
+                "75%"
+            ],
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u672c\u79d1\u53ca\u4ee5\u4e0a",
+                "\u5927\u4e13\u53ca\u4ee5\u4e0a",
+                "\u5b66\u5386\u4e0d\u9650",
+                "\u7855\u58eb\u53ca\u4ee5\u4e0a"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_b3505c92bb9543b8be3c7b433e991d76.setOption(option_b3505c92bb9543b8be3c7b433e991d76);
+    </script>
+</body>
+</html>

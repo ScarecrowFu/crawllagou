@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="../js/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="cf4ec9be4d6c4c5abf59762d8739417c" class="chart-container" style="width:60%; height:500px;"></div>
+    <script>
+        var chart_cf4ec9be4d6c4c5abf59762d8739417c = echarts.init(
+            document.getElementById('cf4ec9be4d6c4c5abf59762d8739417c'), 'white', {renderer: 'canvas'});
+        var option_cf4ec9be4d6c4c5abf59762d8739417c = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "legendHoverLink": true,
+            "data": [
+                {
+                    "name": "0",
+                    "value": 257,
+                    "itemStyle": {
+                        "color": "#d48265"
+                    }
+                },
+                {
+                    "name": "5000",
+                    "value": 959,
+                    "itemStyle": {
+                        "color": "#d48265"
+                    }
+                },
+                {
+                    "name": "10000",
+                    "value": 2638,
+                    "itemStyle": {
+                        "color": "#d48265"
+                    }
+                },
+                {
+                    "name": "15000",
+                    "value": 2489,
+                    "itemStyle": {
+                        "color": "#d48265"
+                    }
+                },
+                {
+                    "name": "20000",
+                    "value": 3269,
+                    "itemStyle": {
+                        "color": "#d48265"
+                    }
+                },
+                {
+                    "name": "30000",
+                    "value": 1839,
+                    "itemStyle": {
+                        "color": "#d48265"
+                    }
+                },
+                {
+                    "name": "40000",
+                    "value": 481,
+                    "itemStyle": {
+                        "color": "#d48265"
+                    }
+                },
+                {
+                    "name": "50000",
+                    "value": 90,
+                    "itemStyle": {
+                        "color": "#d48265"
+                    }
+                },
+                {
+                    "name": "60000",
+                    "value": 38,
+                    "itemStyle": {
+                        "color": "#d48265"
+                    }
+                },
+                {
+                    "name": "70000",
+                    "value": 10,
+                    "itemStyle": {
+                        "color": "#d48265"
+                    }
+                },
+                {
+                    "name": "80000",
+                    "value": 1,
+                    "itemStyle": {
+                        "color": "#d48265"
+                    }
+                },
+                {
+                    "name": "90000",
+                    "value": 2,
+                    "itemStyle": {
+                        "color": "#d48265"
+                    }
+                },
+                {
+                    "name": "100000",
+                    "value": 1,
+                    "itemStyle": {
+                        "color": "#d48265"
+                    }
+                }
+            ],
+            "showBackground": false,
+            "barMinHeight": 0,
+            "barCategoryGap": -1,
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                ""
+            ],
+            "selected": {
+                "": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "formatter": function (params) {                                                var name='';                                                if (params.name < 5000){                                                    name='\u5c0f\u4e8e5K'                                                }                                                else if (params.name < 10000) {                                                    name='5K-10K'                                                }                                                else if (params.name < 15000) {                                                    name='10K-15K'                                                }                                                else if (params.name < 20000) {                                                    name='15K-20K'                                                }                                                else if (params.name < 30000) {                                                    name='20K-30K'                                                }                                                else if (params.name < 40000) {                                                    name='30K-40K'                                                }                                                else if (params.name < 50000) {                                                    name='40K-50K'                                                }                                                else if (params.name < 60000) {                                                    name='50K-60K'                                                }                                                else if (params.name < 70000) {                                                    name='60K-70K'                                                }                                                else if (params.name < 80000) {                                                    name='70K-80K'                                                }                                                else if (params.name < 90000) {                                                    name='80K-90K'                                                }                                                else if (params.name < 100000) {                                                    name='90K-100K'                                                }                                                else {                                                    name='\u5927\u4e8e100K'                                                }                                                return name+':'+params.value;                                                }                                            ,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "name": "\u85aa\u916c",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "nameTextStyle": {
+                "color": "#d48265"
+            },
+            "gridIndex": 0,
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "color": "red",
+                "margin": 8
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "0",
+                "5000",
+                "10000",
+                "15000",
+                "20000",
+                "30000",
+                "40000",
+                "50000",
+                "60000",
+                "70000",
+                "80000",
+                "90000",
+                "100000"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "name": "\u5c97\u4f4d\u6570\u91cf",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "nameTextStyle": {
+                "color": "#d48265"
+            },
+            "gridIndex": 0,
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "color": "red",
+                "margin": 8
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_cf4ec9be4d6c4c5abf59762d8739417c.setOption(option_cf4ec9be4d6c4c5abf59762d8739417c);
+            window.addEventListener('resize', function(){
+                chart_cf4ec9be4d6c4c5abf59762d8739417c.resize();
+            })
+    </script>
+</body>
+</html>
