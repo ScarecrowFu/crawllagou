@@ -6,7 +6,7 @@ fake-headers==1.0.2
 html5lib==1.1
 immutables==0.14
 jieba==0.42.1
-Jinja2==2.11.2
+Jinja2==2.11.3
 loguru==0.5.1
 MarkupSafe==1.1.1
 mysqlclient==1.4.6
