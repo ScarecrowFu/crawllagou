@@ -10,7 +10,7 @@ Jinja2==2.11.2
 loguru==0.5.1
 MarkupSafe==1.1.1
 mysqlclient==1.4.6
-numpy==1.19.0
+numpy==1.22.0
 pandas==1.0.5
 pkg-resources==0.0.0
 prettytable==0.7.2
